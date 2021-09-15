@@ -16,4 +16,5 @@ int main (int argc, char *argv[])
         printWall->setPlayFieldY(atoi (argv[2]));
         std::cout << printWall->getPlayFieldX() << " " << printWall->getPlayFieldY() << std::endl;
     }
+delete printWall;
 }
