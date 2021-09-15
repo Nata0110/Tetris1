@@ -15,7 +15,7 @@ public:
     void setPlayFieldY(int newPlayFieldY);
 
 private:
-    int *mPlayFieldX; // змінні в класі називаються .....
+    int *mPlayFieldX; // вказівник створений але не інііалізований
     int *mPlayFieldY;
 };
 
