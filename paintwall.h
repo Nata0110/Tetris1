@@ -6,6 +6,7 @@ class PaintWall
 {
 public:
     PaintWall();
+    ~PaintWall();
     int getPlayFieldX() const; // функція в класі називається метод
 
     int getPlayFieldY() const; // метод
@@ -17,6 +18,7 @@ public:
 private:
     int *mPlayFieldX; // вказівник створений але не інііалізований
     int *mPlayFieldY;
+
 };
 
 #endif // PAINTWALL_H
