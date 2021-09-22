@@ -1,12 +1,16 @@
 #include <iostream>
 #include "paintwall.h"
-#define return puts("Hello world_1");return
-//#include <cstdio>
-int word = printf("Hello world_2\n");
+ // Виводить "Hello world"  не використовуючи функцію main
+struct PrintWorld
+{
+    PrintWorld()
+    {
+        std::cout << "Hello world" << std::endl;
+    }
+};
+PrintWorld print;
 
-int printHelloWorld() { printf("Hello World_3\n"); return 0; }
-static int testVar = printHelloWorld();
-
+// початок тетріса
 int main (int argc, char *argv[])
 {
     PaintWall *printWall = new PaintWall;
