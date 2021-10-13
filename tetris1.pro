@@ -4,8 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        baseapp.cpp \
         main.cpp \
         paintwall.cpp
 
 HEADERS += \
+    baseapp.h \
     paintwall.h

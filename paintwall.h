@@ -1,8 +1,13 @@
 #ifndef PAINTWALL_H
 #define PAINTWALL_H
 
+#define CHAR_SIDE '#'
 
-class PaintWall
+
+#include "baseapp.h"
+
+
+class PaintWall : public BaseApp
 {
 public:
     PaintWall();
@@ -15,9 +20,12 @@ public:
 
     void setPlayFieldY(int newPlayFieldY);
 
+    void setWalls();
+
+
 private:
-    int *mPlayFieldX; // вказівник створений але не інііалізований
-    int *mPlayFieldY;
+    int mPlayFieldX;
+    int mPlayFieldY;
 
 };
 
